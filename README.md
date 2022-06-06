@@ -82,17 +82,15 @@ EOF
 ```sh
 $ vagrant validate
 
-$ vagrant status
-$ vagrant up # --provider virtualbox
-$ vagrant port
-$ vagrant status
-$ vagrant ssh
+$ vagrant status - показывает состояние машин
+$ vagrant up # --provider virtualbox - создаёт и показывает машины в соответствии с Vagrantfile
+$ vagrant port - показывает гостевые порты машины
+$ vagrant ssh - Подключение ssh к машине
 
-$ vagrant snapshot list
-$ vagrant snapshot push
-$ vagrant snapshot list
-$ vagrant halt
-$ vagrant snapshot pop
+$ vagrant snapshot list - выведение списка снэпшотов
+$ vagrant snapshot push - сделать снэпшот
+$ vagrant halt - выключение машины
+$ vagrant snapshot pop - восстановление состояние машины из снэпшота
 ```
 
 ```ruby
@@ -114,7 +112,7 @@ $ vagrant snapshot pop
 ```
 
 ```sh
-$ vagrant plugin install vagrant-vmware-esxi
+$ vagrant plugin install vagrant-vmware-esxi - установить плагин с заданным именем или путем к файлу
 $ vagrant plugin list
 $ vagrant up --provider=vmware_esxi
 ```
